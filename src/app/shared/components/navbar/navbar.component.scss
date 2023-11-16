@@ -1,0 +1,52 @@
+.navbar {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+    box-sizing: border-box;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    &__image {
+      width: 128px;
+      height: 32px;
+      margin-right: 8px;
+    }
+    &__option {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 4px 8px;
+    }
+  }
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    .mdc-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      height: 48px;
+    }
+  }
+  &__button--secondary {
+    background: #EDE9FE !important;
+    ::ng-deep {
+      .mdc-button__label {
+        color: #7C3AED;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    height: 288px;
+    box-sizing: border-box;
+    padding: 64px;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      color: #d1d5db;
+    }
+    pre {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #d1d5db;
+    }
+  }
+  &__logo {
+    height: 32px;
+    width: 32px;
+  }
+  &__row {
+    display: flex;
+    margin-bottom: 8px;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: white;
+      margin-right: 12px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<form
+  class="login-form__container"
+  [formGroup]="loginForm"
+  (ngSubmit)="login()"
+>
+  <div class="login-form__box-title">
+    <h4>Bienvenido</h4>
+    <h1>Inicia sesión</h1>
+  </div>
+  <mat-form-field appearance="outline" floatLabel="always">
+    <mat-label>Correo Electrónico</mat-label>
+    <input
+      matInput
+      placeholder="Correo Electrónico"
+      type="email"
+      formControlName="email"
+    />
+    <mat-error *ngIf="loginForm.get('email')?.invalid"
+      >Correo Electrónico es requerido</mat-error
+    >
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="outline" floatLabel="always">
+    <mat-label>Contraseña</mat-label>
+    <input
+      matInput
+      placeholder="Contraseña"
+      type="password"
+      formControlName="password"
+    />
+    <!--<mat-icon matSuffix>visibility</mat-icon>-->
+    <mat-icon matSuffix>visibility_off</mat-icon>
+    <mat-error *ngIf="loginForm.get('password')?.invalid"
+      >Contraseña es requerida</mat-error
+    >
+    <mat-hint align="end">¿Olvidaste tu contraseña?</mat-hint>
+  </mat-form-field>
+  <mat-checkbox color="primary" formControlName="remember"
+    >Recordar correo</mat-checkbox
+  >
+  <div class="login-form__box-buttons">
+    <button mat-flat-button color="primary" type="submit">Ingresar</button>
+    <button
+      mat-flat-button
+      class="login-form__button-alternative"
+      type="button"
+    >
+      <img
+        src="assets/googleicon.png"
+        alt="google icon"
+        class="login-login-form__image"
+      />
+      Ingresar con google
+    </button>
+  </div>
+</form>

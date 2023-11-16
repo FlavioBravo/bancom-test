@@ -1,0 +1,60 @@
+.achievement-section {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 64px;
+  }
+  &__wrapper-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &__wrapper-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 592px;
+  }
+  &__card {
+    width: 280px;
+    align-items: center;
+    box-shadow: none;
+    flex-direction: row;
+    .mat-mdc-card-image {
+      margin-bottom: 24px;
+    }
+    .mat-mdc-card-content {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 45px;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #111827;
+      }
+    }
+  }
+}
