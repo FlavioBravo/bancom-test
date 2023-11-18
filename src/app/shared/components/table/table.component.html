@@ -45,14 +45,18 @@
       >
         <div class="example-element-diagram">
           <div class="example-element-position">{{ element.position }}</div>
-          <div class="example-element-symbol">{{ element.symbol }}</div>
           <div class="example-element-name">{{ element.name }}</div>
-          <div class="example-element-weight">{{ element.weight }}</div>
+          <div class="example-element-username">{{ element.username }}</div>
+          <div class="example-element-address">{{ element.address }}</div>
+          <div class="example-element-email">{{ element.email }}</div>
+          <div class="example-element-phoneNumber">
+            {{ element.phoneNumber }}
+          </div>
         </div>
         <div class="example-element-description">
-          {{ element.description }}
+          {{ element.post.title }}
           <span class="example-element-description-attribution">
-            -- Wikipedia
+            {{ element.post.description }}
           </span>
         </div>
       </div>
